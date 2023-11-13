@@ -1,0 +1,164 @@
+body{
+    background:#36384d;
+    margin:auto;
+}
+
+.newsletter{
+    padding:2rem;
+    background-color: white;
+    border-radius: 20px;
+    display:grid;
+    grid-template-columns: repeat(2, 22rem);
+   /* justify-content: center;*/
+   /* gap: none;*/
+    max-width:45rem;
+    max-height: 46rem;
+    /*align-items: end;*/
+    position:absolute;
+    inset: 6rem;
+    margin:auto;
+    
+}
+.attribution{
+    position:absolute;
+    bottom:0rem;
+    right: 30%;
+}
+.container-1{
+   /* background:green;*/
+    text-align:justify;
+    padding-bottom:20px;
+    max-width:22rem;
+    max-height: 22rem;
+}
+.container-1 .email{
+    padding:10px;
+    border: 2px solid black;
+    margin:0;
+    width: 19rem;
+    border-radius:5px;
+   
+}
+.container-1 .button{
+    padding:10px;
+    border: none;
+    margin:0;
+    width: 20.5rem;
+    border-radius:5px;
+    background:rgb(24, 24, 54);
+    color:white;
+    cursor:pointer;
+}
+.container-1 .all-list {
+    list-style-type: none;
+}
+.all-list .list-item{
+    list-style-image: url('newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg');
+    position: relative;
+    right:14%;
+}
+.img{
+    max-width:22rem;
+    max-height: 22rem;
+    width: 100%;
+}
+.img .svg{
+    max-height: 23rem;
+    max-width: 23rem;
+}
+.dismiss{
+    /*display: none;*/
+    text-align: justify;
+    box-sizing: 22rem;
+}
+.btn{
+    padding:10px;
+    border: none;
+    margin:0;
+    width: 20.5rem;
+    border-radius:5px;
+    background:rgb(24, 24, 54);
+    color:white;
+    cursor:pointer;
+}
+.hidden{
+    display:none;
+}
+
+@media only screen and (max-width: 320px) {
+    .newsletter{
+        background:transparent;
+        display:block;
+
+    }
+    .container-1 .email{
+        width:70px;
+    }
+    .img {
+        display:none;
+    }
+    .container-1 .button{
+        width:100px;
+    }
+    .attribution{
+        position:absolute;
+        bottom:0rem;
+        right: 0%;
+}
+}
+@media only screen and (max-width:1024px){
+    .newsletter{
+        /*:transparent;*/
+        display:block;
+        background-color: none;
+
+    }
+    .container-1 .email{
+        width:fit-content;
+    }
+    .container-1{
+        background-color: white;
+        border-radius: 9px;
+    }
+    p{
+        width: fit-content;
+    }
+    
+    .container-1 .button{
+        width:fit-content;
+    }
+    .attribution{
+        position:absolute;
+        bottom:0rem;
+        right: 0%;
+}
+}
+@media only screen and (min-width: 500px){
+    .img {
+        display:block;
+        width:fit-content;
+    }
+    .newsletter{
+        width:fit-content;
+        background-color: none;
+    }
+    .attribution{
+        position:absolute;
+        bottom:0rem;
+        right: 0%;
+}
+.container-1 .email{
+    width:fit-content;
+}
+
+.container-1 .button{
+    width:fit-content;
+}
+.container-1{
+    background-color: white;
+    border-radius: 9px;
+}
+p{
+    width: fit-content;
+}
+}
